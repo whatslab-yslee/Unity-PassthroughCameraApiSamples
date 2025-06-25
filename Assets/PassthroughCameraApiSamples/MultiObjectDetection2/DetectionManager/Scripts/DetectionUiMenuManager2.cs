@@ -6,10 +6,10 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class DetectionUiMenuManager : MonoBehaviour
+    public class DetectionUiMenuManager2 : MonoBehaviour
     {
         [Header("Ui buttons")]
         [SerializeField] private OVRInput.RawButton m_actionButton = OVRInput.RawButton.A;
@@ -41,7 +41,7 @@ namespace PassthroughCameraSamples.MultiObjectDetection
             m_noPermissionPanel.SetActive(false);
             m_loadingPanel.SetActive(true);
             // Wait until Sentis model is loaded
-            var sentisInference = FindFirstObjectByType<SentisInferenceRunManager>();
+            var sentisInference = FindFirstObjectByType<SentisInferenceRunManager2>();
             while (!sentisInference.IsModelLoaded)
             {
                 yield return null;

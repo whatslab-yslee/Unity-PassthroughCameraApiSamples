@@ -6,10 +6,10 @@ using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class DetectionManager : MonoBehaviour
+    public class DetectionManager2 : MonoBehaviour
     {
         [SerializeField] private WebCamTextureManager m_webCamTextureManager;
 
@@ -17,17 +17,17 @@ namespace PassthroughCameraSamples.MultiObjectDetection
         [SerializeField] private OVRInput.RawButton m_actionButton = OVRInput.RawButton.A;
 
         [Header("Ui references")]
-        [SerializeField] private DetectionUiMenuManager m_uiMenuManager;
+        [SerializeField] private DetectionUiMenuManager2 m_uiMenuManager;
 
         [Header("Placement configureation")]
         [SerializeField] private GameObject m_spwanMarker;
-        [SerializeField] private EnvironmentRayCastSampleManager m_environmentRaycast;
+        [SerializeField] private EnvironmentRayCastSampleManager2 m_environmentRaycast;
         [SerializeField] private float m_spawnDistance = 0.25f;
         [SerializeField] private AudioSource m_placeSound;
 
         [Header("Sentis inference ref")]
-        [SerializeField] private SentisInferenceRunManager m_runInference;
-        [SerializeField] private SentisInferenceUiManager m_uiInference;
+        [SerializeField] private SentisInferenceRunManager2 m_runInference;
+        [SerializeField] private SentisInferenceUiManager2 m_uiInference;
         [Space(10)]
         public UnityEvent<int> OnObjectsIdentified;
 
@@ -43,7 +43,7 @@ namespace PassthroughCameraSamples.MultiObjectDetection
         private IEnumerator Start()
         {
             // Wait until Sentis model is loaded
-            var sentisInference = FindAnyObjectByType<SentisInferenceRunManager>();
+            var sentisInference = FindAnyObjectByType<SentisInferenceRunManager2>();
             while (!sentisInference.IsModelLoaded)
             {
                 yield return null;
@@ -148,7 +148,7 @@ namespace PassthroughCameraSamples.MultiObjectDetection
             var existMarker = false;
             foreach (var e in m_spwanedEntities)
             {
-                var markerClass = e.GetComponent<DetectionSpawnMarkerAnim>();
+                var markerClass = e.GetComponent<DetectionSpawnMarkerAnim2>();
                 if (markerClass)
                 {
                     var dist = Vector3.Distance(e.transform.position, position.Value);
@@ -168,7 +168,7 @@ namespace PassthroughCameraSamples.MultiObjectDetection
 
                 // Update marker transform with the real world transform
                 eMarker.transform.SetPositionAndRotation(position.Value, Quaternion.identity);
-                eMarker.GetComponent<DetectionSpawnMarkerAnim>().SetYoloClassName(className);
+                eMarker.GetComponent<DetectionSpawnMarkerAnim2>().SetYoloClassName(className);
             }
 
             return !existMarker;

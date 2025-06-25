@@ -3,10 +3,10 @@
 using Meta.XR.Samples;
 using UnityEngine;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class DetectionSpawnMarkerAnim : MonoBehaviour
+    public class DetectionSpawnMarkerAnim2 : MonoBehaviour
     {
         [SerializeField] private Vector3 m_anglesSpeed = new(20.0f, 40.0f, 60.0f);
         [SerializeField] private Transform m_model;

@@ -4,10 +4,10 @@ using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class DetectionUiBlinkText : MonoBehaviour
+    public class DetectionUiBlinkText2 : MonoBehaviour
     {
         [SerializeField] private Text m_labelInfo;
         [SerializeField] private float m_blinkSpeed = 0.2f;

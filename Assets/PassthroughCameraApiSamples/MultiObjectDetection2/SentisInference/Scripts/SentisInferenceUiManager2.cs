@@ -7,18 +7,18 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class SentisInferenceUiManager : MonoBehaviour
+    public class SentisInferenceUiManager2 : MonoBehaviour
     {
         [Header("Placement configureation")]
-        [SerializeField] private EnvironmentRayCastSampleManager m_environmentRaycast;
+        [SerializeField] private EnvironmentRayCastSampleManager2 m_environmentRaycast;
         [SerializeField] private WebCamTextureManager m_webCamTextureManager;
         private PassthroughCameraEye CameraEye => m_webCamTextureManager.Eye;
 
         [Header("UI display references")]
-        [SerializeField] private SentisObjectDetectedUiManager m_detectionCanvas;
+        [SerializeField] private SentisObjectDetectedUiManager2 m_detectionCanvas;
         [SerializeField] private RawImage m_displayImage;
         [SerializeField] private Sprite m_boxTexture;
         [SerializeField] private Color m_boxColor;

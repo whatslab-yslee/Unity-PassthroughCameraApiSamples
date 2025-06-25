@@ -8,10 +8,10 @@ using UnityEngine;
 using UnityEngine.Android;
 #endif
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class EnvironmentRayCastSampleManager : MonoBehaviour
+    public class EnvironmentRayCastSampleManager2 : MonoBehaviour
     {
         private const string SPATIALPERMISSION = "com.oculus.permission.USE_SCENE";
         [SerializeField] private EnvironmentRaycastManager m_raycastManager;

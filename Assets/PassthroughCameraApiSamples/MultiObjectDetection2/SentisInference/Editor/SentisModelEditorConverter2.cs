@@ -6,20 +6,20 @@ using UnityEditor;
 using UnityEngine;
 using FF = Unity.Sentis.Functional;
 
-namespace PassthroughCameraSamples.MultiObjectDetection.Editor
+namespace PassthroughCameraSamples.MultiObjectDetection2.Editor
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    [CustomEditor(typeof(SentisInferenceRunManager))]
+    [CustomEditor(typeof(SentisInferenceRunManager2))]
     public class SentisModelEditorConverter : UnityEditor.Editor
     {
-        private const string FILEPATH = "Assets/PassthroughCameraApiSamples/MultiObjectDetection/SentisInference/Model/yolov9sentis.sentis";
-        private SentisInferenceRunManager m_targetClass;
+        private const string FILEPATH = "Assets/PassthroughCameraApiSamples/MultiObjectDetection2/SentisInference/Model/yolov9sentis.sentis";
+        private SentisInferenceRunManager2 m_targetClass;
         private float m_iouThreshold;
         private float m_scoreThreshold;
 
         public void OnEnable()
         {
-            m_targetClass = (SentisInferenceRunManager)target;
+            m_targetClass = (SentisInferenceRunManager2)target;
             m_iouThreshold = serializedObject.FindProperty("m_iouThreshold").floatValue;
             m_scoreThreshold = serializedObject.FindProperty("m_scoreThreshold").floatValue;
         }

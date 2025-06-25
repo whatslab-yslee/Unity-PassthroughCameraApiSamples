@@ -6,10 +6,10 @@ using Meta.XR.Samples;
 using Unity.Sentis;
 using UnityEngine;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class SentisInferenceRunManager : MonoBehaviour
+    public class SentisInferenceRunManager2 : MonoBehaviour
     {
         [Header("Sentis Model config")]
         [SerializeField] private Vector2Int m_inputSize = new(640, 640);
@@ -20,7 +20,7 @@ namespace PassthroughCameraSamples.MultiObjectDetection
         public bool IsModelLoaded { get; private set; } = false;
 
         [Header("UI display references")]
-        [SerializeField] private SentisInferenceUiManager m_uiInference;
+        [SerializeField] private SentisInferenceUiManager2 m_uiInference;
 
         [Header("[Editor Only] Convert to Sentis")]
         public ModelAsset OnnxModel;

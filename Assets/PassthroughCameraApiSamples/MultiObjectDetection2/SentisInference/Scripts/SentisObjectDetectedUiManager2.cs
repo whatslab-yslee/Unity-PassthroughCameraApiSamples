@@ -6,10 +6,10 @@ using Meta.XR.Samples;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace PassthroughCameraSamples.MultiObjectDetection
+namespace PassthroughCameraSamples.MultiObjectDetection2
 {
     [MetaCodeSample("PassthroughCameraApiSamples-MultiObjectDetection")]
-    public class SentisObjectDetectedUiManager : MonoBehaviour
+    public class SentisObjectDetectedUiManager2 : MonoBehaviour
     {
         [SerializeField] private WebCamTextureManager m_webCamTextureManager;
         private PassthroughCameraEye CameraEye => m_webCamTextureManager.Eye;
@@ -25,7 +25,7 @@ namespace PassthroughCameraSamples.MultiObjectDetection
             if (m_webCamTextureManager == null)
             {
                 Debug.LogError($"PCA: {nameof(m_webCamTextureManager)} field is required "
-                            + $"for the component {nameof(SentisObjectDetectedUiManager)} to operate properly");
+                            + $"for the component {nameof(SentisObjectDetectedUiManager2)} to operate properly");
                 enabled = false;
                 yield break;
             }

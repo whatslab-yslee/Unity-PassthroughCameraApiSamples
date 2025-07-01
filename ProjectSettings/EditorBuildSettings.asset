@@ -14,9 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PassthroughCameraApiSamples/MultiObjectDetection/MultiObjectDetection.unity
     guid: 20c230cce46443841b5727b1d6100bfc
-  - enabled: 1
-    path: Assets/PassthroughCameraApiSamples/HandTracking/HandTracking.unity
-    guid: 4bcaf213a68b4660b1ec91a0d38b794e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f2bf97b3acdb64248a707c407c9fc54e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a971eac5e950046e586c5e153e32d05c, type: 2}

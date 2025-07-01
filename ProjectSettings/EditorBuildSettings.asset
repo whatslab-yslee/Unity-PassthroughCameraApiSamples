@@ -12,20 +12,11 @@ EditorBuildSettings:
     path: Assets/PassthroughCameraApiSamples/CameraViewer/CameraViewer.unity
     guid: ad5bb12b10679b840999aa322aa7a491
   - enabled: 1
-    path: Assets/PassthroughCameraApiSamples/CameraToWorld/CameraToWorld.unity
-    guid: 756785b371a4f49438b7e2148816e892
-  - enabled: 1
-    path: Assets/PassthroughCameraApiSamples/BrightnessEstimation/BrightnessEstimation.unity
-    guid: 8ea13e682474e1748965f8e21972f2b2
-  - enabled: 1
     path: Assets/PassthroughCameraApiSamples/MultiObjectDetection/MultiObjectDetection.unity
     guid: 20c230cce46443841b5727b1d6100bfc
   - enabled: 1
-    path: Assets/PassthroughCameraApiSamples/MultiObjectDetection2/MultiObjectDetection2.unity
+    path: Assets/PassthroughCameraApiSamples/HandTracking/HandTracking.unity
     guid: 4bcaf213a68b4660b1ec91a0d38b794e
-  - enabled: 1
-    path: Assets/PassthroughCameraApiSamples/ShaderSample/ShaderSample.unity
-    guid: 708e8dca6055146b28afe2481f141457
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f2bf97b3acdb64248a707c407c9fc54e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a971eac5e950046e586c5e153e32d05c, type: 2}
